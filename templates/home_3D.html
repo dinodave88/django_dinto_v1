@@ -1,0 +1,39 @@
+{% extends 'base_3D.html' %}
+
+{% block content %}
+
+<form action='run' method='post'>
+
+    {% csrf_token %}
+    <div class="text-left">
+        Width : <input type="text" name="Width"><br>
+        Height : <input type="text" name="Height"><br>
+        Slope : <input type="text" name="Slope"><br>
+        SW spacing : <input type="text" name="SW_spacing"><br>
+        EW spacing : <input type="text" name="EW_spacing"><br>
+        NS Rafter breaks : <input type="text" name="NSR_Breaks"><br>
+        FS Rafter breaks : <input type="text" name="FSR_Breaks"><br>
+        ICO spacing : <input type="text" name="ICO_spacing"><br>
+        Braced bays : <input type="text" name="Braced_bay_location"><br>
+
+        NS Column support : <input type="text" name="NSC_SUPPORT"><br>
+        FS Column support : <input type="text" name="FSC_SUPPORT"><br>
+        WC Column support : <input type="text" name="WC_SUPPORT"><br>
+        INT Column support : <input type="text" name="ICO_SUPPORT"><br>
+
+        DEAD Load : <input type="text" name="DL"><br>
+        LIVE Load : <input type="text" name="LL"><br>
+        COLLATERAL Load : <input type="text" name="CL"><br>
+
+        Wind Pressure : <input type="text" name="WL"><br>
+        Internal Co-eff : <input type="text" name="Cpi"><br>
+        Loads Required = <input type="text" name="LOADS_REQUIRED"><br>
+        Seismic Code = <input type="text" name="SEISMIC_CODE"><br>
+    </div>
+    <input type="submit" value="Generate Staad">
+
+</form>
+
+
+
+{% endblock %}
