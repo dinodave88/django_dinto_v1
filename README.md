@@ -1,0 +1,1 @@
+# django_dinto_v1
