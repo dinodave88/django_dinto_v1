@@ -7,7 +7,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home_3D(request):
-    return render(request,"home_3D.html")
+    return render(request,"App1.html")
 
 def run_3D(request):
     Width = float(request.POST["Width"])
